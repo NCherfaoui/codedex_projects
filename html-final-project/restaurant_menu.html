@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        header {
+            min-width: 100%;
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        header img {
+            margin: -10px;
+            width: 100%;
+            height: 100%;
+        }
+
+        header h1 {
+            margin: 15px;
+
+            font-size: 44px;
+            font-weight: normal;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 3px 3px #741818;
+            color: white;
+
+
+        }
+
+        nav {
+            background-color: #666;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin-inline: auto;
+            max-width: 60%;
+        }
+
+        article {
+            background: #fefefe;
+
+            border: 1px solid rgb(75, 73, 73);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        article:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            background-color: #f5f5f5;
+            cursor: pointer;
+
+
+        }
+
+        #menu p {
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            line-height: 1.5;
+            font-size: 16px;
+            font-style: italic;
+            text-align: center;
+
+        }
+
+        #menu h2 {
+            text-align: center;
+            margin-bottom: 0;
+
+        }
+
+        #menu img {
+            width: 45%;
+            height: auto;
+            vertical-align: top;
+            border-radius: 10px;
+
+            margin-right: 20px;
+        }
+
+        #order-form {
+            background: #fff;
+
+            border: 1px solid rgb(75, 73, 73);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        #order-form label {
+            display: block;
+            margin-bottom: 5px;
+
+        }
+
+        #order-form input,
+        #order-form textarea {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #order-form input[type="submit"] {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #order-form input[type="checkbox"] {
+            margin-bottom: 10px;
+            width: 5%;
+            padding: 5px;
+
+
+        }
+
+        footer {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img id="header-img" src="images/banner.png" alt="Restaurant Logo">
+        <h1>Mon Resto Gastro
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu </a></li>
+                <li>|</li>
+                <li><a href="#order-form"> Place Your Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <article>
+                <img src="images/menu_1.jpg" alt="Menu Item Image">
+                <h3>Fusion Créative</h3>
+                <p>Laissez-vous surprendre par notre menu fusion, une explosion d'harmonies gastronomiques innovantes qui marient les traditions et les tendances modernes. </p>
+                <p>Prix: 39.99 €</p>
+            </article>
+            <article>
+                <img src="images/menu_2.jpg" alt="Menu Item Image">
+                <h3>Douceurs sucrées</h3>
+                <p>Terminez votre expérience avec notre sélection divine de desserts, une symphonie sucrée qui clôture votre repas en apothéose. </p>
+                <p>Prix: 39.99 €</p>
+
+            </article>
+            <article>
+                <img src="images/menu_3.jpg" alt="Menu Item Image">
+                <h3>Jardins Épicuriens</h3>
+                <p>Explorez les saveurs fraîches et vibrantes de notre menu végétarien, où les légumes de saison sont
+                    les héros d'une symphonie gustative inoubliable. </p>
+                <p>Prix: 39.99 €</p>
+
+            </article>
+            <article>
+                <img src="images/menu_4.jpg" alt="Menu Item Image">
+                <h3>Délices de la Mer</h3>
+                <p>Savourer l'océan avec notre sélection exquise de fruits de mer, préparés avec passion pour éveiller
+                    vos papilles à chaque bouchée. </p>
+                <p>Prix: 39.99 €</p>
+
+            </article>
+            <article>
+                <img src="images/menu_5.jpg" alt="Menu Item Image">
+                <h3>Voyage Culinaire</h3>
+                <p>Embarquez pour un périple gustatif à travers le monde avec notre sélection internationale de plats, vous transportant d'une bouchée à l'autre. </p>
+                <p>Prix: 39.99 €</p>
+
+            </article>
+            <article>
+                <img src="images/menu_6.jpg" alt="Menu Item Image">
+                <h3>Traditions Gourmandes</h3>
+                <p>Retrouvez le réconfort des saveurs familiales dans notre menu traditionnel, où chaque plat raconte une histoire d'héritage et de passion culinaire. </p>
+                <p>Prix: 39.99 €</p>
+            </article>
+        </section>
+
+
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form>
+                <label for="menu-item-1">Fusion Créative:</label>
+                <input type="number" id="menu-item-1" name="menu-item-1" min="0">
+
+                <label for="menu-item-2">Douceurs sucrées:</label>
+                <input type="number" id="menu-item-2" name="menu-item-2" min="0">
+
+                <label for="menu-item-3">Jardins Épicuriens:</label>
+                <input type="number" id="menu-item-3" name="menu-item-3" min="0">
+
+                <label for="menu-item-4">Monde Culinaire:</label>
+                <input type="number" id="menu-item-4" name="menu-item-1" min="0">
+
+                <label for="menu-item-5">Traditions Gourmandes:</label>
+                <input type="number" id="menu-item-5" name="menu-item-2" min="0">
+
+                <label for="menu-item-6">Voyage Culinaire:</label>
+                <input type="number" id="menu-item-6" name="menu-item-3" min="0">
+
+                <fieldset>
+                    <legend>Accompagnements:</legend>
+                    <label for="sides-1">Pain:</label>
+                    <input type="checkbox" id="sides-1" name="sides" value="Pain">
+
+                    <label for="sides-2">Crudités:</label>
+                    <input type="checkbox" id="sides-2" name="sides" value="Crudités">
+
+                    <label for="sides-3">Fruits:</label>
+                    <input type="checkbox" id="sides-3" name="sides" value="Fruits">
+
+                    <label for="sides-4">Chips:</label>
+                    <input type="checkbox" id="sides-4" name="sides" value="Chips">
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Supléments:</legend>
+                    <label for="add-ons-1">Fromage:</label>
+                    <input type="checkbox" id="add-ons-1" name="add-ons" value="Fromage">
+
+                    <label for="add-ons-2">Huile d'olive:</label>
+                    <input type="checkbox" id="add-ons-2" name="add-ons" value="Huile d'olive">
+
+                    <label for="add-ons-3">Poivre:</label>
+                    <input type="checkbox" id="add-ons-3" name="add-ons" value="Poivre">
+
+                    <label for="add-ons-4">Sel:</label>
+                    <input type="checkbox" id="add-ons-4" name="add-ons" value="Sel">
+
+                    <label for="add-ons-5">Sauce:</label>
+                    <input type="checkbox" id="add-ons-5" name="add-ons" value="Sauce">
+                </fieldset>
+
+
+
+                <label for="special-requests">Demande supplémentaire:</label>
+                <textarea id="special-requests" name="special-requests"></textarea>
+
+                <input type="submit" onclick="alert('Order Placed!');" value="Commander">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p> Made with love by Ncherfaoui</p>
+    </footer>
+</body>
+
+</html>
