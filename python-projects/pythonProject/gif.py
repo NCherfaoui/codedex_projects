@@ -1,7 +1,7 @@
 import imageio.v3 as iio
-filenames = ['team-pic1.png', 'team-pic2.png']
+filenames = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg']
 images = [ ]
 for filename in filenames:
   images.append(iio.imread(filename))
-iio.imwrite('team.gif', images, duration = 500, loop = 0)
+iio.imwrite('discord.gif', images, duration = 500, loop = 0)
 

@@ -1,0 +1,11 @@
+*.idea/
+*.venv/
+
+*.ipynb
+*.ipynb_checkpoints
+*.pyc
+*.pyo
+*.so
+*.swp
+*.png
+*/photo
